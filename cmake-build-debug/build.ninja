@@ -49,6 +49,30 @@ cmake_ninja_workdir = /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/
 
 build cmake_object_order_depends_target_fantastic-umbrella: phony || cmake_object_order_depends_target_libtcod
 
+build CMakeFiles/fantastic-umbrella.dir/src/Actor.cpp.o: CXX_COMPILER__fantastic-umbrella_Debug /home/logan/Dev/C++/fantastic-umbrella/src/Actor.cpp || cmake_object_order_depends_target_fantastic-umbrella
+  DEFINES = -DLIBTCOD_STATIC
+  DEP_FILE = CMakeFiles/fantastic-umbrella.dir/src/Actor.cpp.o.d
+  FLAGS = -g -Wall -Wextra
+  INCLUDES = -I/home/logan/Dev/C++/fantastic-umbrella/libtcod/src -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
+  OBJECT_DIR = CMakeFiles/fantastic-umbrella.dir
+  OBJECT_FILE_DIR = CMakeFiles/fantastic-umbrella.dir/src
+
+build CMakeFiles/fantastic-umbrella.dir/src/Engine.cpp.o: CXX_COMPILER__fantastic-umbrella_Debug /home/logan/Dev/C++/fantastic-umbrella/src/Engine.cpp || cmake_object_order_depends_target_fantastic-umbrella
+  DEFINES = -DLIBTCOD_STATIC
+  DEP_FILE = CMakeFiles/fantastic-umbrella.dir/src/Engine.cpp.o.d
+  FLAGS = -g -Wall -Wextra
+  INCLUDES = -I/home/logan/Dev/C++/fantastic-umbrella/libtcod/src -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
+  OBJECT_DIR = CMakeFiles/fantastic-umbrella.dir
+  OBJECT_FILE_DIR = CMakeFiles/fantastic-umbrella.dir/src
+
+build CMakeFiles/fantastic-umbrella.dir/src/Map.cpp.o: CXX_COMPILER__fantastic-umbrella_Debug /home/logan/Dev/C++/fantastic-umbrella/src/Map.cpp || cmake_object_order_depends_target_fantastic-umbrella
+  DEFINES = -DLIBTCOD_STATIC
+  DEP_FILE = CMakeFiles/fantastic-umbrella.dir/src/Map.cpp.o.d
+  FLAGS = -g -Wall -Wextra
+  INCLUDES = -I/home/logan/Dev/C++/fantastic-umbrella/libtcod/src -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
+  OBJECT_DIR = CMakeFiles/fantastic-umbrella.dir
+  OBJECT_FILE_DIR = CMakeFiles/fantastic-umbrella.dir/src
+
 build CMakeFiles/fantastic-umbrella.dir/src/main.cpp.o: CXX_COMPILER__fantastic-umbrella_Debug /home/logan/Dev/C++/fantastic-umbrella/src/main.cpp || cmake_object_order_depends_target_fantastic-umbrella
   DEFINES = -DLIBTCOD_STATIC
   DEP_FILE = CMakeFiles/fantastic-umbrella.dir/src/main.cpp.o.d
@@ -56,8 +80,6 @@ build CMakeFiles/fantastic-umbrella.dir/src/main.cpp.o: CXX_COMPILER__fantastic-
   INCLUDES = -I/home/logan/Dev/C++/fantastic-umbrella/libtcod/src -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = CMakeFiles/fantastic-umbrella.dir
   OBJECT_FILE_DIR = CMakeFiles/fantastic-umbrella.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/fantastic-umbrella.dir/
-  TARGET_PDB = bin/fantastic-umbrella.pdb
 
 
 # =============================================================================
@@ -67,15 +89,14 @@ build CMakeFiles/fantastic-umbrella.dir/src/main.cpp.o: CXX_COMPILER__fantastic-
 #############################################
 # Link the executable bin/fantastic-umbrella
 
-build bin/fantastic-umbrella: CXX_EXECUTABLE_LINKER__fantastic-umbrella_Debug CMakeFiles/fantastic-umbrella.dir/src/main.cpp.o | vcpkg_installed/x64-linux/debug/lib/libSDL2d.a vcpkg_installed/x64-linux/debug/lib/libSDL2maind.a libtcod/lib/libtcod.a vcpkg_installed/x64-linux/debug/lib/libSDL2d.a vcpkg_installed/x64-linux/debug/lib/libz.a vcpkg_installed/x64-linux/debug/lib/libglad.a vcpkg_installed/x64-linux/debug/lib/liblodepng-c.a vcpkg_installed/x64-linux/debug/lib/libutf8proc.a || libtcod/lib/libtcod.a
+build bin/fantastic-umbrella: CXX_EXECUTABLE_LINKER__fantastic-umbrella_Debug CMakeFiles/fantastic-umbrella.dir/src/Actor.cpp.o CMakeFiles/fantastic-umbrella.dir/src/Engine.cpp.o CMakeFiles/fantastic-umbrella.dir/src/Map.cpp.o CMakeFiles/fantastic-umbrella.dir/src/main.cpp.o | vcpkg_installed/x64-linux/debug/lib/libSDL2d.a vcpkg_installed/x64-linux/debug/lib/libSDL2maind.a libtcod/lib/libtcod.a vcpkg_installed/x64-linux/debug/lib/libSDL2d.a vcpkg_installed/x64-linux/debug/lib/libz.a vcpkg_installed/x64-linux/debug/lib/libglad.a vcpkg_installed/x64-linux/debug/lib/liblodepng-c.a vcpkg_installed/x64-linux/debug/lib/libutf8proc.a || libtcod/lib/libtcod.a
   FLAGS = -g
   LINK_LIBRARIES = vcpkg_installed/x64-linux/debug/lib/libSDL2d.a  vcpkg_installed/x64-linux/debug/lib/libSDL2maind.a  libtcod/lib/libtcod.a  vcpkg_installed/x64-linux/debug/lib/libSDL2d.a  -lm  -ldbus-1  -lunwind  -lunwind-generic  -lrt  -Wl,--no-undefined  -pthread  vcpkg_installed/x64-linux/debug/lib/libz.a  vcpkg_installed/x64-linux/debug/lib/libglad.a  vcpkg_installed/x64-linux/debug/lib/liblodepng-c.a  vcpkg_installed/x64-linux/debug/lib/libutf8proc.a
   OBJECT_DIR = CMakeFiles/fantastic-umbrella.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/fantastic-umbrella.dir/
   TARGET_FILE = bin/fantastic-umbrella
-  TARGET_PDB = bin/fantastic-umbrella.pdb
+  TARGET_PDB = fantastic-umbrella.dbg
 
 
 #############################################
@@ -164,8 +185,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/bresenham.cpp.o: CXX_COMPILER__
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/bresenham_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/bresenham_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -174,8 +193,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/bresenham_c.c.o: C_COMPILER__li
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/bsp.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/bsp.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -184,8 +201,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/bsp.cpp.o: CXX_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/bsp_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/bsp_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -194,8 +209,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/bsp_c.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/color.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/color.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -204,8 +217,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/color.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/color_.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/color_.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -214,8 +225,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/color_.cpp.o: CXX_COMPILER__lib
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -224,8 +233,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console.c.o: C_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console_.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -234,8 +241,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_.cpp.o: CXX_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_drawing.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console_drawing.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -244,8 +249,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_drawing.c.o: C_COMPILER
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_etc.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console_etc.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -254,8 +257,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_etc.c.o: C_COMPILER__li
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_init.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console_init.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -264,8 +265,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_init.c.o: C_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_init_.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console_init_.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -274,8 +273,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_init_.cpp.o: CXX_COMPIL
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_printing.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console_printing.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -284,8 +281,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_printing.c.o: C_COMPILE
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_rexpaint.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/console_rexpaint.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -294,8 +289,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/console_rexpaint.c.o: C_COMPILE
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/context.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/context.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -304,8 +297,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/context.c.o: C_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/context_init.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/context_init.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -314,8 +305,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/context_init.c.o: C_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/context_viewport.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/context_viewport.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -324,8 +313,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/context_viewport.c.o: C_COMPILE
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/error.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/error.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -334,8 +321,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/error.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -344,8 +329,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov.cpp.o: CXX_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -354,8 +337,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_c.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_circular_raycasting.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov_circular_raycasting.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -364,8 +345,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_circular_raycasting.c.o: C_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_diamond_raycasting.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov_diamond_raycasting.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -374,8 +353,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_diamond_raycasting.c.o: C_C
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_permissive2.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov_permissive2.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -384,8 +361,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_permissive2.c.o: C_COMPILER
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_recursive_shadowcasting.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov_recursive_shadowcasting.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -394,8 +369,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_recursive_shadowcasting.c.o
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_restrictive.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov_restrictive.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -404,8 +377,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_restrictive.c.o: C_COMPILER
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_symmetric_shadowcast.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/fov_symmetric_shadowcast.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -414,8 +385,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/fov_symmetric_shadowcast.c.o: C
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/globals.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/globals.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -424,8 +393,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/globals.c.o: C_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/heapq.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/heapq.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -434,8 +401,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/heapq.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/heightmap.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/heightmap.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -444,8 +409,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/heightmap.cpp.o: CXX_COMPILER__
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/heightmap_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/heightmap_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -454,8 +417,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/heightmap_c.c.o: C_COMPILER__li
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/image.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/image.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -464,8 +425,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/image.cpp.o: CXX_COMPILER__libt
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/image_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/image_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -474,8 +433,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/image_c.c.o: C_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/lex.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/lex.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -484,8 +441,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/lex.cpp.o: CXX_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/lex_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/lex_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -494,8 +449,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/lex_c.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/list_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/list_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -504,8 +457,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/list_c.c.o: C_COMPILER__libtcod
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/logging.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/logging.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -514,8 +465,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/logging.c.o: C_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/mersenne.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/mersenne.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -524,8 +473,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/mersenne.cpp.o: CXX_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/mersenne_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/mersenne_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -534,8 +481,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/mersenne_c.c.o: C_COMPILER__lib
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/mouse.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/mouse.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -544,8 +489,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/mouse.cpp.o: CXX_COMPILER__libt
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/namegen.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/namegen.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -554,8 +497,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/namegen.cpp.o: CXX_COMPILER__li
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/namegen_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/namegen_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -564,8 +505,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/namegen_c.c.o: C_COMPILER__libt
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/noise.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/noise.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -574,8 +513,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/noise.cpp.o: CXX_COMPILER__libt
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/noise_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/noise_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -584,8 +521,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/noise_c.c.o: C_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/parser.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/parser.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -594,8 +529,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/parser.cpp.o: CXX_COMPILER__lib
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/parser_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/parser_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -604,8 +537,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/parser_c.c.o: C_COMPILER__libtc
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/path.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/path.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -614,8 +545,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/path.cpp.o: CXX_COMPILER__libtc
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/pathfinder.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/pathfinder.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -624,8 +553,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/pathfinder.c.o: C_COMPILER__lib
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/pathfinder_frontier.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/pathfinder_frontier.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -634,8 +561,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/pathfinder_frontier.c.o: C_COMP
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/path_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/path_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -644,8 +569,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/path_c.c.o: C_COMPILER__libtcod
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/random.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/random.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -654,8 +577,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/random.c.o: C_COMPILER__libtcod
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_gl.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/renderer_gl.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -664,8 +585,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_gl.c.o: C_COMPILER__li
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_gl1.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/renderer_gl1.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -674,8 +593,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_gl1.c.o: C_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_gl2.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/renderer_gl2.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -684,8 +601,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_gl2.c.o: C_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_sdl2.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/renderer_sdl2.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -694,8 +609,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_sdl2.c.o: C_COMPILER__
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_xterm.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/renderer_xterm.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -704,8 +617,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/renderer_xterm.c.o: C_COMPILER_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/sys.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -714,8 +625,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys.cpp.o: CXX_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/sys_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -724,8 +633,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_c.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_sdl_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/sys_sdl_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -734,8 +641,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_sdl_c.c.o: C_COMPILER__libt
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_sdl_img_bmp.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/sys_sdl_img_bmp.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -744,8 +649,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_sdl_img_bmp.c.o: C_COMPILER
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_sdl_img_png.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/sys_sdl_img_png.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -754,8 +657,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sys_sdl_img_png.c.o: C_COMPILER
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/tileset.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -764,8 +665,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset.c.o: C_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_bdf.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/tileset_bdf.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -774,8 +673,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_bdf.c.o: C_COMPILER__li
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_fallback.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/tileset_fallback.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -784,8 +681,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_fallback.c.o: C_COMPILE
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_render.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/tileset_render.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -794,8 +689,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_render.c.o: C_COMPILER_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_truetype.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/tileset_truetype.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -804,8 +697,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tileset_truetype.c.o: C_COMPILE
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tree_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/tree_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -814,8 +705,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/tree_c.c.o: C_COMPILER__libtcod
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/txtfield.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/txtfield.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -824,8 +713,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/txtfield.cpp.o: CXX_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/txtfield_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/txtfield_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -834,8 +721,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/txtfield_c.c.o: C_COMPILER__lib
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/wrappers.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/wrappers.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -844,8 +729,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/wrappers.c.o: C_COMPILER__libtc
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/zip.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/zip.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -854,8 +737,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/zip.cpp.o: CXX_COMPILER__libtco
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/zip_c.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/zip_c.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -864,8 +745,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/zip_c.c.o: C_COMPILER__libtcod_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/button.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/button.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -874,8 +753,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/button.cpp.o: CXX_COMPILER_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/container.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/container.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -884,8 +761,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/container.cpp.o: CXX_COMPIL
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/flatlist.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/flatlist.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -894,8 +769,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/flatlist.cpp.o: CXX_COMPILE
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/hbox.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/hbox.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -904,8 +777,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/hbox.cpp.o: CXX_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/image.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/image.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -914,8 +785,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/image.cpp.o: CXX_COMPILER__
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/label.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/label.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -924,8 +793,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/label.cpp.o: CXX_COMPILER__
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/radiobutton.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/radiobutton.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -934,8 +801,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/radiobutton.cpp.o: CXX_COMP
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/slider.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/slider.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -944,8 +809,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/slider.cpp.o: CXX_COMPILER_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/statusbar.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/statusbar.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -954,8 +817,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/statusbar.cpp.o: CXX_COMPIL
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/textbox.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/textbox.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -964,8 +825,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/textbox.cpp.o: CXX_COMPILER
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/togglebutton.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/togglebutton.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -974,8 +833,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/togglebutton.cpp.o: CXX_COM
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/toolbar.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/toolbar.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -984,8 +841,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/toolbar.cpp.o: CXX_COMPILER
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/vbox.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/vbox.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -994,8 +849,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/vbox.cpp.o: CXX_COMPILER__l
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/widget.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/gui/widget.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -1004,8 +857,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui/widget.cpp.o: CXX_COMPILER_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/gui
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sdl2/event.cpp.o: CXX_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/libtcod/sdl2/event.cpp || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -1014,8 +865,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/libtcod/sdl2/event.cpp.o: CXX_COMPILER_
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/libtcod/sdl2
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 build libtcod/CMakeFiles/libtcod.dir/src/vendor/stb.c.o: C_COMPILER__libtcod_Debug /home/logan/Dev/C++/fantastic-umbrella/libtcod/src/vendor/stb.c || cmake_object_order_depends_target_libtcod
   DEFINES = -DLIBTCOD_STATIC -DTCOD_IGNORE_DEPRECATED -DUTF8PROC_STATIC
@@ -1024,8 +873,6 @@ build libtcod/CMakeFiles/libtcod.dir/src/vendor/stb.c.o: C_COMPILER__libtcod_Deb
   INCLUDES = -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include -isystem /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/vcpkg_installed/x64-linux/include/SDL2
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   OBJECT_FILE_DIR = libtcod/CMakeFiles/libtcod.dir/src/vendor
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
-  TARGET_PDB = libtcod/lib/libtcod.pdb
 
 
 # =============================================================================
@@ -1040,9 +887,8 @@ build libtcod/lib/libtcod.a: CXX_STATIC_LIBRARY_LINKER__libtcod_Debug libtcod/CM
   OBJECT_DIR = libtcod/CMakeFiles/libtcod.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = libtcod/CMakeFiles/libtcod.dir/libtcod.pdb
   TARGET_FILE = libtcod/lib/libtcod.a
-  TARGET_PDB = libtcod/lib/libtcod.pdb
+  TARGET_PDB = libtcod.a.dbg
 
 
 #############################################
@@ -1235,14 +1081,14 @@ build /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/CMakeFiles/cmake.
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/CMakeFiles/cmake.verify_globs | ../CMakeLists.txt ../libtcod/CMakeLists.txt ../libtcod/src/CMakeLists.txt ../libtcod/src/libtcodConfig.cmake.in ../libtcod/src/sources.cmake ../vcpkg.json ../vcpkg/scripts/buildsystems/vcpkg.cmake /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.c.in /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake vcpkg_installed/x64-linux/share/glad/gladConfig.cmake vcpkg_installed/x64-linux/share/glad/gladConfigVersion.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-debug.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-release.cmake vcpkg_installed/x64-linux/share/glad/gladTargets.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-config.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-debug.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-release.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2Config.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets.cmake vcpkg_installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake
+build build.ninja: RERUN_CMAKE /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/CMakeFiles/cmake.verify_globs | ../CMakeLists.txt ../libtcod/CMakeLists.txt ../libtcod/src/CMakeLists.txt ../libtcod/src/libtcodConfig.cmake.in ../libtcod/src/sources.cmake ../vcpkg.json ../vcpkg/scripts/buildsystems/vcpkg.cmake /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake vcpkg_installed/x64-linux/share/glad/gladConfig.cmake vcpkg_installed/x64-linux/share/glad/gladConfigVersion.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-debug.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-release.cmake vcpkg_installed/x64-linux/share/glad/gladTargets.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-config.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-debug.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-release.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2Config.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets.cmake vcpkg_installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../libtcod/CMakeLists.txt ../libtcod/src/CMakeLists.txt ../libtcod/src/libtcodConfig.cmake.in ../libtcod/src/sources.cmake ../vcpkg.json ../vcpkg/scripts/buildsystems/vcpkg.cmake /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.c.in /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake vcpkg_installed/x64-linux/share/glad/gladConfig.cmake vcpkg_installed/x64-linux/share/glad/gladConfigVersion.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-debug.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-release.cmake vcpkg_installed/x64-linux/share/glad/gladTargets.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-config.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-debug.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-release.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2Config.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets.cmake vcpkg_installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake: phony
+build ../CMakeLists.txt ../libtcod/CMakeLists.txt ../libtcod/src/CMakeLists.txt ../libtcod/src/libtcodConfig.cmake.in ../libtcod/src/sources.cmake ../vcpkg.json ../vcpkg/scripts/buildsystems/vcpkg.cmake /home/logan/Dev/C++/fantastic-umbrella/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindZLIB.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake vcpkg_installed/x64-linux/share/glad/gladConfig.cmake vcpkg_installed/x64-linux/share/glad/gladConfigVersion.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-debug.cmake vcpkg_installed/x64-linux/share/glad/gladTargets-release.cmake vcpkg_installed/x64-linux/share/glad/gladTargets.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-config.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-debug.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets-release.cmake vcpkg_installed/x64-linux/share/lodepng-c/lodepng-c-targets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2Config.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2mainTargets.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake vcpkg_installed/x64-linux/share/sdl2/SDL2staticTargets.cmake vcpkg_installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake: phony
 
 
 #############################################

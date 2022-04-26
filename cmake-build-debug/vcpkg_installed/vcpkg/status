@@ -74,3 +74,51 @@ Description: Legacy port. Use port lodepng instead.
 Type: Port
 Status: install ok installed
 
+Package: sdl2
+Version: 2.0.20
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 306acf02879d40cb2a92d0ce725a280075f07202c2e48a8e9cd45cc9e870081f
+Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
+Type: Port
+Status: install ok installed
+
+Package: sdl2
+Feature: x11
+Architecture: x64-linux
+Multi-Arch: same
+Description: Dynamically load X11 support
+Type: Port
+Status: install ok installed
+
+Package: stb
+Version: 2020-09-14
+Port-Version: 1
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 66bdd364ee9a05b166818d391a90ceeb22851d803e86d96a6393fd0f5e555fc9
+Description: public domain header-only libraries
+Type: Port
+Status: install ok installed
+
+Package: utf8proc
+Version: 2.6.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 2076976d2f8ff5b911ab008be52cd0063772503ff8b94b43d596003f20ba1eee
+Description: Clean C library for processing UTF-8 Unicode data.
+Type: Port
+Status: install ok installed
+
+Package: zlib
+Version: 1.2.12
+Architecture: x64-linux
+Multi-Arch: same
+Abi: a7cfa21458e5b9278563b7e9dec7160a99715c9cd1b719b080a0481081b74e8c
+Description: A compression library
+Type: Port
+Status: install ok installed
+

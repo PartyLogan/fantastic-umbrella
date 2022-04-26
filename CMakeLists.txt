@@ -18,7 +18,7 @@ file(
     CONFIGURE_DEPENDS  # Automatically reconfigure if source files are added/removed.
     ${PROJECT_SOURCE_DIR}/src/*.cpp
 )
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES} src/Actor.cpp src/Actor.hpp src/Map.cpp src/Map.hpp src/Tile.hpp src/Engine.cpp src/Engine.hpp)
 
 # Ensure the C++17 standard is available.
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
