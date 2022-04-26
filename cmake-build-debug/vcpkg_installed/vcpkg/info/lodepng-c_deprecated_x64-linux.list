@@ -1,0 +1,4 @@
+x64-linux/
+x64-linux/share/
+x64-linux/share/lodepng-c/
+x64-linux/share/lodepng-c/vcpkg_abi_info.txt

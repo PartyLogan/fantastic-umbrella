@@ -1,0 +1,293 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"libtcod/src/sources.cmake",
+			"libtcod/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 124,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 190,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 196,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 279,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 299,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 305,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 136,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 161,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 167,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "IncludeFiles",
+			"destination" : "include/.",
+			"paths" : 
+			[
+				"libtcod/src/libtcod.h",
+				"libtcod/src/libtcod.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "IncludeFiles",
+			"destination" : "include/libtcod",
+			"paths" : 
+			[
+				"libtcod/src/libtcod/bresenham.h",
+				"libtcod/src/libtcod/bresenham.hpp",
+				"libtcod/src/libtcod/bsp.h",
+				"libtcod/src/libtcod/bsp.hpp",
+				"libtcod/src/libtcod/color.h",
+				"libtcod/src/libtcod/color.hpp",
+				"libtcod/src/libtcod/config.h",
+				"libtcod/src/libtcod/console.h",
+				"libtcod/src/libtcod/console.hpp",
+				"libtcod/src/libtcod/console_drawing.h",
+				"libtcod/src/libtcod/console_etc.h",
+				"libtcod/src/libtcod/console_init.h",
+				"libtcod/src/libtcod/console_printing.h",
+				"libtcod/src/libtcod/console_rexpaint.h",
+				"libtcod/src/libtcod/console_types.h",
+				"libtcod/src/libtcod/context.h",
+				"libtcod/src/libtcod/context_init.h",
+				"libtcod/src/libtcod/context_viewport.h",
+				"libtcod/src/libtcod/error.h",
+				"libtcod/src/libtcod/fov.h",
+				"libtcod/src/libtcod/fov.hpp",
+				"libtcod/src/libtcod/fov_types.h",
+				"libtcod/src/libtcod/globals.h",
+				"libtcod/src/libtcod/heapq.h",
+				"libtcod/src/libtcod/heightmap.h",
+				"libtcod/src/libtcod/heightmap.hpp",
+				"libtcod/src/libtcod/image.h",
+				"libtcod/src/libtcod/image.hpp",
+				"libtcod/src/libtcod/lex.h",
+				"libtcod/src/libtcod/lex.hpp",
+				"libtcod/src/libtcod/libtcod.h",
+				"libtcod/src/libtcod/libtcod.hpp",
+				"libtcod/src/libtcod/libtcod_int.h",
+				"libtcod/src/libtcod/list.h",
+				"libtcod/src/libtcod/list.hpp",
+				"libtcod/src/libtcod/logging.h",
+				"libtcod/src/libtcod/matrix.h",
+				"libtcod/src/libtcod/mersenne.h",
+				"libtcod/src/libtcod/mersenne.hpp",
+				"libtcod/src/libtcod/mersenne_types.h",
+				"libtcod/src/libtcod/mouse.h",
+				"libtcod/src/libtcod/mouse.hpp",
+				"libtcod/src/libtcod/mouse_types.h",
+				"libtcod/src/libtcod/namegen.h",
+				"libtcod/src/libtcod/namegen.hpp",
+				"libtcod/src/libtcod/noise.h",
+				"libtcod/src/libtcod/noise.hpp",
+				"libtcod/src/libtcod/noise_defaults.h",
+				"libtcod/src/libtcod/parser.h",
+				"libtcod/src/libtcod/parser.hpp",
+				"libtcod/src/libtcod/path.h",
+				"libtcod/src/libtcod/path.hpp",
+				"libtcod/src/libtcod/pathfinder.h",
+				"libtcod/src/libtcod/pathfinder_frontier.h",
+				"libtcod/src/libtcod/portability.h",
+				"libtcod/src/libtcod/random.h",
+				"libtcod/src/libtcod/renderer_gl.h",
+				"libtcod/src/libtcod/renderer_gl1.h",
+				"libtcod/src/libtcod/renderer_gl2.h",
+				"libtcod/src/libtcod/renderer_gl_internal.h",
+				"libtcod/src/libtcod/renderer_sdl2.h",
+				"libtcod/src/libtcod/renderer_xterm.h",
+				"libtcod/src/libtcod/sys.h",
+				"libtcod/src/libtcod/sys.hpp",
+				"libtcod/src/libtcod/tileset.h",
+				"libtcod/src/libtcod/tileset_bdf.h",
+				"libtcod/src/libtcod/tileset_fallback.h",
+				"libtcod/src/libtcod/tileset_render.h",
+				"libtcod/src/libtcod/tileset_truetype.h",
+				"libtcod/src/libtcod/timer.h",
+				"libtcod/src/libtcod/tree.h",
+				"libtcod/src/libtcod/tree.hpp",
+				"libtcod/src/libtcod/txtfield.h",
+				"libtcod/src/libtcod/txtfield.hpp",
+				"libtcod/src/libtcod/utility.h",
+				"libtcod/src/libtcod/version.h",
+				"libtcod/src/libtcod/wrappers.h",
+				"libtcod/src/libtcod/zip.h",
+				"libtcod/src/libtcod/zip.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "IncludeFiles",
+			"destination" : "include/libtcod/gui",
+			"paths" : 
+			[
+				"libtcod/src/libtcod/gui/button.hpp",
+				"libtcod/src/libtcod/gui/container.hpp",
+				"libtcod/src/libtcod/gui/flatlist.hpp",
+				"libtcod/src/libtcod/gui/gui.hpp",
+				"libtcod/src/libtcod/gui/gui_portability.hpp",
+				"libtcod/src/libtcod/gui/hbox.hpp",
+				"libtcod/src/libtcod/gui/image.hpp",
+				"libtcod/src/libtcod/gui/label.hpp",
+				"libtcod/src/libtcod/gui/radiobutton.hpp",
+				"libtcod/src/libtcod/gui/slider.hpp",
+				"libtcod/src/libtcod/gui/statusbar.hpp",
+				"libtcod/src/libtcod/gui/textbox.hpp",
+				"libtcod/src/libtcod/gui/togglebutton.hpp",
+				"libtcod/src/libtcod/gui/toolbar.hpp",
+				"libtcod/src/libtcod/gui/vbox.hpp",
+				"libtcod/src/libtcod/gui/widget.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "IncludeFiles",
+			"destination" : "include/libtcod/sdl2",
+			"paths" : 
+			[
+				"libtcod/src/libtcod/sdl2/event.h",
+				"libtcod/src/libtcod/sdl2/gl2_ext_.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "IncludeFiles",
+			"destination" : "include/libtcod/utility",
+			"paths" : 
+			[
+				"libtcod/src/libtcod/utility/matrix.h",
+				"libtcod/src/libtcod/utility/vector2.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Library",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libtcod/lib/libtcod.a"
+			],
+			"targetId" : "libtcod::@38e5ccd5cbbf1480f158",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "share/libtcod",
+			"exportName" : "libtcodTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "libtcod::@38e5ccd5cbbf1480f158",
+					"index" : 1
+				}
+			],
+			"paths" : 
+			[
+				"libtcod/src/CMakeFiles/Export/share/libtcod/libtcodTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "share/libtcod",
+			"paths" : 
+			[
+				"cmake-build-debug/libtcod/src/libtcodConfig.cmake",
+				"cmake-build-debug/libtcod/src/libtcodConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "share/libtcod",
+			"paths" : 
+			[
+				{
+					"from" : "libtcod/src/../LICENSE.txt",
+					"to" : "copyright"
+				}
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "libtcod/src",
+		"source" : "libtcod/src"
+	}
+}

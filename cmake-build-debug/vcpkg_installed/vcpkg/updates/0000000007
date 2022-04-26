@@ -1,0 +1,9 @@
+Package: utf8proc
+Version: 2.6.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 2076976d2f8ff5b911ab008be52cd0063772503ff8b94b43d596003f20ba1eee
+Description: Clean C library for processing UTF-8 Unicode data.
+Type: Port
+Status: install ok installed

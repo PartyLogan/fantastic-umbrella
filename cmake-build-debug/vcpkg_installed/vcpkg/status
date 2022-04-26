@@ -1,0 +1,76 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 9c58447aedd647b61144e9a1c5fdd78465c870c8c3c8cf3e9e5dd0346e5c30e4
+Type: Port
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2022-04-05
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 9003e1c552f7b6cdc7753c88369a591c6bcde5988c2a5b36a5e62dcd085abb07
+Type: Port
+Status: install ok installed
+
+Package: egl-registry
+Version: 2021-11-23
+Architecture: x64-linux
+Multi-Arch: same
+Abi: b387d5c15fc068663b30b2647c46d4fbabbb285cc488ac068da1a9692daed93a
+Description: the EGL API and Extension Registry
+Type: Port
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2021-11-17
+Depends: egl-registry
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 8e129e0da33a205652b0b326316f3f7f5090c4e221592460d8658558879edc1f
+Description: the API and Extension registries for the OpenGL family APIs
+Type: Port
+Status: install ok installed
+
+Package: glad
+Version: 0.1.34
+Port-Version: 3
+Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: f58b277c4515f8c9425dfd6ed1da8412b3a2883a1858b05d4d21fd1a1b57bc29
+Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+Type: Port
+Default-Features: loader
+Status: install ok installed
+
+Package: glad
+Feature: loader
+Architecture: x64-linux
+Multi-Arch: same
+Description: Generate loader logic.
+Type: Port
+Status: install ok installed
+
+Package: lodepng
+Version: 2021-12-04
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: ba2ffa32b11d2b285f48f3d0c0819d52a5eb6784f0cb33fde6cd3a19a634b0c4
+Description: PNG encoder and decoder in C++
+Type: Port
+Status: install ok installed
+
+Package: lodepng-c
+Version: deprecated
+Depends: lodepng
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 974c60135cf98929724a0c366eb59592d9ecfec015b4efe724b08a4d291ae4cf
+Description: Legacy port. Use port lodepng instead.
+Type: Port
+Status: install ok installed
+

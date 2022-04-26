@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
   auto tileset = tcod::load_tilesheet("data/dejavu16x16_gs_tc.png", {32, 8}, tcod::CHARMAP_TCOD);
   params.tileset = tileset.get();
 
-  auto console = tcod::Console{80, 40};
+  auto console = tcod::Console{80, 45};
   params.console = console.get();
 
   auto context = tcod::new_context(params);
